@@ -1,12 +1,53 @@
-# React + Vite
+## Getting Started
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Prerequisites
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (latest LTS version recommended)
+- npm or yarn
 
-Currently, two official plugins are available:
+### Installation
+1. Clone the repository:
+   ```sh
+   cd frontend
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Running the Development Server
+Start the local development server with:
+```sh
+npm run dev
+```
 
-## Expanding the ESLint configuration
+The application should now be running at `http://localhost:5173/` (default port).
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Building for Production
+To create a production-ready build, run:
+```sh
+npm run build
+```
+
+### Preview the Build
+To preview the built application locally:
+```sh
+npm run preview
+```
+
+## Project Structure
+```
+├── public/        # Static assets
+├── src/           # Source code
+│   ├── assets/    # Images, icons, etc.
+│   ├── components/# Reusable components
+│   ├── pages/     # Page components (if applicable)
+│   ├── App.jsx    # Main app file
+│   ├── main.js    # Entry file
+├── .gitignore     # Ignored files
+├── index.html     # Main HTML file
+├── vite.config.js # Vite configuration
+├── package.json   # Dependencies and scripts
+└── README.md      # Project documentation
+```
+
