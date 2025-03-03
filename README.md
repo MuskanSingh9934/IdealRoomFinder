@@ -1,53 +1,55 @@
-# Room_Mate_Finder
+# Room Mate Finder
 
-Capstone-Project = Software and Web Technology
+### Overview
+Room Mate Finder is an open-source project designed to help individuals find suitable rooms in PGs and hostels. It also enables property owners to list their PGs and hostels for potential tenants. Our platform provides an easy and efficient way to connect room seekers with property owners while offering advanced filtering options and city-based data analysis.
 
-Room-Mate-FInder = Where Person can buy Room in Pg and Hostel and Owner can list their Pg and Hostel in Our Website.
+## Features
 
-Web UI Features:-
+### Web UI Features
+- **Sign-up/Login Page** – Secure user authentication with email/password.
+- **User Profile** – Manage personal details, preferences, and uploaded images.
+- **Location-Based Search** – Find rooms or roommates in the same area.
+- **Advanced Filters**:
+  - Match location
+  - Room or roommate preference
+  - Gender selection
+  - AC or Non-AC
+  - Furnished/Unfurnished
+  - Washing machine availability
+  - Expected rent & agreement type
+  - Parking & kitchen facilities
+- **Facilities & Amenities**:
+  - Security guards
+  - Fire NOC compliance
+  - Transport accessibility
+  - Nearby grocery stores & markets
+  - Gym, sports areas, cinema
+- **Messaging & Chat** – Contact potential roommates directly.
+- **Room Listings** – View and post available rooms for customers and property owners.
+- **Social Media Integration** – Connect via Instagram, Facebook, WhatsApp, and X.
+- **PG/Hostel Owner Contacts** – Verified owner contact details.
+- **City-Based Data Analysis** – Insights on trending locations, rent trends, and demand.
 
-1. Sign-up/Login Page – User authentication with email/password.
-2. User Profile – Manage personal details, preferences, and uploaded images.
-3. Location-Based Search – Find rooms or roommates in the same area.
-4. Advanced Filters:
-   - Match location
-   - Room or roommate preference
-   - Gender selection
-   - AC or Non-AC
-   - Furnished/Unfurnished
-   - Washing machine availability
-   - Expected rent & agreement type
-   - Parking & kitchen facilities
-5. Facilities & Amenities:
-   - Security guards
-   - Fire NOC compliance
-   - Transport accessibility
-   - Nearby grocery stores & markets
-   - Gym, sports areas, cinema
-6. Messaging & Chat – Contact potential roommates directly.
-7. Room Listings:-
-   - Available rooms posted by both customers and property owners.
-8. Social Media Integration – Connect via Instagram, Facebook, WhatsApp, X.
-9. PG/Hostel Owner Contacts – Contact details for verified PG or hostel owners.
-10. City-Based Data Analysis – Insights on trending locations, rent trends, and demand.
+## Technology Stack
+- **Frontend**: React.js, TailwindCSS
+- **Backend**: NodeJS, Express
+- **Database**: MongoDB
+
+## Team Members
+1. **Ombir** 
+2. **Muskan**
+3. **Krishna**
+4. **Harman**
+5. **Gaurav**
+
+### Guided By:
+**Seema Kumari**
+
+## Contribution
+We welcome contributions from the open-source community! Feel free to submit issues, fork the repository, and create pull requests to improve the project.
+
+## Contact
+For any queries, reach out to us
 
 ---
-
-Tools used For this Project is :-
-UI-React.
-Style-Styled{Components}...
-Backend.....
-DB....
-
----
-
-Group Member's :-
-1.Ombir {Leader}
-2.Harman
-3.Krishna
-4.Muskan
-5.Gaurav
-
----------------------------------Guid By Seema Kumari -----------------
-
----
+_We hope Room Mate Finder makes your room hunting experience effortless!_
