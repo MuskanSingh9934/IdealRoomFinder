@@ -1,0 +1,128 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Top Bar Styling */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #2C3E50; /* Dark blue-gray */
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar .logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #f39c12; /* Orange color for the logo */
+  letter-spacing: 1px;
+}
+
+.top-bar .nav-links ul {
+  list-style: bold;
+  display: flex;
+  gap: 26px;
+}
+
+.top-bar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.top-bar .nav-links a:hover {
+  color: #f39c12; /* Highlight on hover */
+}
+
+.top-bar .auth-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.top-bar .auth-buttons button {
+  padding: 10px 20px;
+  background-color: #16a085; /* Teal color for buttons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.top-bar .auth-buttons button:hover {
+  background-color: #1abc9c;
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Location Selector Styling */
+.location-selector {
+  text-align: center;
+  margin-top: 100px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.location-selector h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.location-selector select {
+  padding: 12px;
+  font-size: 1.1em;
+  border: 2px solid #BDC3C7;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+.location-selector select:focus {
+  border-color: #f39c12;
+  outline: none;
+}
+
+.location-selector button {
+  padding: 12px 25px;
+  background-color: #2980b9; /* Blue color for the button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.location-selector button:hover {
+  background-color: #3498db;
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+#location-result {
+  margin-top: 20px;
+  font-size: 1.3em;
+  color: #27ae60; /* Green color for success messages */
+  font-weight: bold;
+}
