@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI with Top Bar and Location Selector</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <!-- Top Bar -->
+  <header class="top-bar">
+    <div class="logo">Logo</div>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <button onclick="login()">Login</button>
+        <button onclick="signup()">Signup</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Location Selector -->
+  <main class="location-selector">
+    <h1>Select Location in India</h1>
+    <select id="location">
+      <option value="Phagwara">Phagwara</option>
+      <option value="LawGate">LawGate</option>
+      
+    </select>
+    <button onclick="getLocation()">Submit</button>
+    <div id="location-result"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
