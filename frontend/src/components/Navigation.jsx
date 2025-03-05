@@ -2,7 +2,7 @@ export function Navigation() {
   return (
     <header>
       <div className="logo">
-        <span className="logo-icon">🏠</span>Ideal Stay
+        <span className="logo-icon"><img src="logo.png" alt="nt-v" className="img1"/></span>Matez..
       </div>
       <nav>
         <ul>
@@ -31,3 +31,4 @@ export function Navigation() {
     </header>
   );
 }
+

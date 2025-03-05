@@ -150,4 +150,6 @@ function App() {
 
 export default App;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+
+`;
