@@ -10,9 +10,9 @@ function App() {
       <Navigation />
       <section className="hero">
         <div className="hero-content">
-          <h1>Find Your Perfect Room or Roommate</h1>
+          <h1>Find Your Perfect Room or Roommate and Listing-Room</h1>
           <p>
-            Ideal Stay helps you connect with compatible roommates and find the
+            Matez.. helps you connect with compatible roommates and find the
             perfect living space based on your preferences and location.
           </p>
           <div className="search-bar">
@@ -34,7 +34,7 @@ function App() {
 
       <section className="features">
         <div className="section-header">
-          <h2>Why Choose Ideal Stay</h2>
+          <h2>Why Choose Matez..</h2>
           <p>
             We offer a comprehensive platform to make your accommodation search
             simple, quick, and reliable.
@@ -94,7 +94,7 @@ function App() {
 
       <section className="how-it-works">
         <div className="section-header">
-          <h2>How Ideal Stay Works</h2>
+          <h2>How Matez.. Works</h2>
           <p>
             Finding your perfect room or roommate is just a few simple steps
             away
@@ -124,13 +124,13 @@ function App() {
           <div className="step">
             <div className="step-number">4</div>
             <h3>Move In</h3>
-            <p>Finalize details and start enjoying your ideal stay</p>
+            <p>Finalize details and start enjoying your Matez..</p>
           </div>
         </div>
       </section>
 
       <section className="cta">
-        <h2>Ready to Find Your Ideal Stay?</h2>
+        <h2>Ready to Find Your Matez..?</h2>
         <p>
           Join thousands of satisfied users who found their perfect living
           arrangement through our platform.
