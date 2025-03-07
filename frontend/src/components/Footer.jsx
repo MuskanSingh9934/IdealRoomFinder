@@ -4,7 +4,9 @@ export function Footer() {
       <div className="footer-grid">
         <div className="footer-section">
           <div className="footer-logo">
-            <span className="logo-icon">🏠</span>Ideal Stay
+            <span className="logo-icon">
+              <img src="logo.png" alt="nt-v" className="img1"/>
+              </span>Matez..
           </div>
           <p>
             Finding your perfect room or roommate made simple and stress-free.
@@ -84,7 +86,7 @@ export function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2025 Ideal Stay. All rights reserved.</p>
+        <p>&copy; 2025 Matez.. All rights reserved.</p>
       </div>
     </footer>
   );
