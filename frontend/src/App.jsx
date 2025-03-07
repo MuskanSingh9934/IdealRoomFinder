@@ -1,12 +1,13 @@
-import "./App.css";
+import "./styles/App.css";
 import styled from "styled-components";
 import { Navigation } from "./components/Navigation";
 import { Footer } from "./components/Footer";
+import "./styles/index.css";
 
 function App() {
   return (
     <div>
-      <Navigation></Navigation>
+      <Navigation />
       <section className="hero">
         <div className="hero-content">
           <h1>Find Your Perfect Room or Roommate</h1>
@@ -143,7 +144,6 @@ function App() {
           </a>
         </div>
       </section>
-      <Footer />
     </div>
   );
 }

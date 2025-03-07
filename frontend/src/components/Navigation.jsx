@@ -21,10 +21,10 @@ export function Navigation() {
         </ul>
       </nav>
       <div className="auth-buttons">
-        <a href="./pages/login.html" className="btn btn-outline">
+        <a href="/login" className="btn btn-outline">
           Login
         </a>
-        <a href="./pages/register.html" className="btn btn-filled">
+        <a href="/register" className="btn btn-filled">
           Sign Up
         </a>
       </div>
