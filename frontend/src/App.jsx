@@ -1,9 +1,6 @@
-import "./styles/App.css";
-import styled from "styled-components";
 import { Navigation } from "./components/Navigation";
-import { Footer } from "./components/Footer";
-import "./styles/index.css";
-
+import Footer from "./components/footer";
+import "./styles/App.css";
 function App() {
   return (
     <div>
@@ -49,6 +46,7 @@ function App() {
               preferred neighborhood with our advanced geo-location filters.
             </p>
           </div>
+
           <div className="feature-card">
             <div className="feature-icon">🔄</div>
             <h3>Advanced Matching</h3>
@@ -144,10 +142,9 @@ function App() {
           </a>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
 
 export default App;
-
-const Wrapper = styled.div``;

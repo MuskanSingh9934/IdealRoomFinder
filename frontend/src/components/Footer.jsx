@@ -1,35 +1,37 @@
-export function Footer() {
+import React from "react";
+import "../styles/footer.css";
+
+const Footer = () => {
   return (
     <footer>
-      <div className="footer-grid">
-        <div className="footer-section">
-          <div className="footer-logo">
-            <span className="logo-icon">
-              <img src="logo.png" alt="nt-v" className="img1"/>
-              </span>Matez..
+      <div class="footer-grid">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img class="logo-icon" src="/logo.png"></img>
+            Ideal Stay
           </div>
           <p>
             Finding your perfect room or roommate made simple and stress-free.
           </p>
-          <div className="social-links">
-            <a href="#" className="social-icon">
+          <div class="social-links">
+            <a href="#" class="social-icon">
               f
             </a>
-            <a href="#" className="social-icon">
+            <a href="#" class="social-icon">
               in
             </a>
-            <a href="#" className="social-icon">
+            <a href="#" class="social-icon">
               X
             </a>
-            <a href="#" className="social-icon">
+            <a href="#" class="social-icon">
               ig
             </a>
           </div>
         </div>
 
-        <div className="footer-section">
+        <div class="footer-section">
           <h3>For Roommates</h3>
-          <ul className="footer-links">
+          <ul class="footer-links">
             <li>
               <a href="#">Find Rooms</a>
             </li>
@@ -45,9 +47,9 @@ export function Footer() {
           </ul>
         </div>
 
-        <div className="footer-section">
+        <div class="footer-section">
           <h3>For Property Owners</h3>
-          <ul className="footer-links">
+          <ul class="footer-links">
             <li>
               <a href="#">List Your Property</a>
             </li>
@@ -63,9 +65,9 @@ export function Footer() {
           </ul>
         </div>
 
-        <div className="footer-section">
+        <div class="footer-section">
           <h3>Company</h3>
-          <ul className="footer-links">
+          <ul class="footer-links">
             <li>
               <a href="#">About Us</a>
             </li>
@@ -85,9 +87,11 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="footer-bottom">
-        <p>&copy; 2025 Matez.. All rights reserved.</p>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Ideal Stay. All rights reserved.</p>
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

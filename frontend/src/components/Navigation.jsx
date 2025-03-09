@@ -1,15 +1,10 @@
-import { CgProfile } from "react-icons/cg";
+import "../styles/App.css";
 export function Navigation() {
   return (
     <header>
-      <div className="logo">
-        <span className="logo-icon">
-          <img src="image.png" alt="nt-v" className="img1"/>
-          </span>Matez 
-          <div class="loading">
-   <span>.</span><span>.</span><span>.</span>
-</div>
-
+      <div class="logo">
+        <img class="logo-icon" src="/image.png"></img>
+        Ideal Stay
       </div>
       <nav>
         <ul>
@@ -20,9 +15,6 @@ export function Navigation() {
             <a href="#">Find Roommates</a>
           </li>
           <li>
-            <a href="#">Listing-Room</a>
-          </li>
-          <li>
             <a href="#">How It Works</a>
           </li>
           <li>
@@ -30,18 +22,14 @@ export function Navigation() {
           </li>
         </ul>
       </nav>
-      <div className="auth-buttons">
-        <a href="/login" className="btn btn-outline">
+      <div class="auth-buttons">
+        <a href="/login" class="btn btn-outline">
           Login
         </a>
-        <a href="/register" className="btn btn-filled">
+        <a href="/register" class="btn btn-filled">
           Sign Up
-        </a>
-        <a href="./pages/register.html" >
-        <CgProfile className="profile"/>
         </a>
       </div>
     </header>
   );
 }
-
