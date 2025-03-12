@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/footer.css";
 
-const Footer = () => {
+export default function Footer() {
   return (
     <footer>
       <div class="footer-grid">
@@ -92,6 +92,4 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

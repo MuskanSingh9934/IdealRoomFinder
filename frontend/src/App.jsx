@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Navigation } from "./components/Navigation";
 import Footer from "./components/footer";
+
 import "./styles/App.css";
 function App() {
   const [load, setLoad] = useState(true);
@@ -25,7 +26,7 @@ function App() {
           Ideal Stay
         </span>
 
-        {Array.from({ length: 1 }).map((_, index) => (
+        {/* {Array.from({ length: 1 }).map((_, index) => (
           <span
             key={index}
             className="light"
@@ -33,7 +34,7 @@ function App() {
               position: "absolute",
             }}
           />
-        ))}
+        ))} */}
       </div>
     );
   else
