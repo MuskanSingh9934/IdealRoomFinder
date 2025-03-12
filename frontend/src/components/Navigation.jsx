@@ -1,7 +1,7 @@
 import "../styles/App.css";
-export function Navigation() {
+export function Navigation({ style }) {
   return (
-    <header>
+    <header style={style}>
       <div class="logo">
         <img class="logo-icon" src="/image.png"></img>
         Ideal Stay
@@ -23,10 +23,10 @@ export function Navigation() {
         </ul>
       </nav>
       <div class="auth-buttons">
-        <a href="/login" class="btn btn-outline">
+        <a href="/login" class="Authbtn btn-outline">
           Login
         </a>
-        <a href="/register" class="btn btn-filled">
+        <a href="/register" class="Authbtn btn-filled">
           Sign Up
         </a>
       </div>

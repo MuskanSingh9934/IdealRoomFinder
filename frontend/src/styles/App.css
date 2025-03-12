@@ -1,9 +1,9 @@
 :root {
-  --primary: #4a6fdc;
+  --primary: #7aaac5;
   --secondary: #8bb8e8;
   --accent: #ff6b6b;
   --light: #f9fafb;
-  --dark: #2d3748;
+  --dark: rgb(234, 218, 218);
   --success: #48bb78;
 }
 
@@ -21,7 +21,7 @@ body {
 }
 
 header {
-  background: linear-gradient(to right, var(--primary), var(--secondary));
+  /* background: linear-gradient(to right, var(--primary), var(--secondary)); */
   padding: 1rem 5%;
   display: flex;
   justify-content: space-between;
@@ -29,7 +29,8 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
 }
 
 .logo {
@@ -72,7 +73,7 @@ nav a:hover {
   gap: 1rem;
 }
 
-.btn {
+.Authbtn {
   padding: 0.5rem 1.5rem;
   border-radius: 4px;
   font-weight: 500;
@@ -106,13 +107,26 @@ nav a:hover {
 
 .hero {
   display: flex;
+  position: relative;
   padding: 0 5%;
-  min-height: 80vh;
+  height: 100vh;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
-  /* position: relative;
-  overflow: hidden; */
+  /* background-color: white; */
+  background-image: url("../media/residential.jpg");
+  background-size: cover;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  background-size: cover;
+  filter: brightness(60%);
+  z-index: 1;
 }
 
 .hero-content {
@@ -140,13 +154,13 @@ nav a:hover {
   font-size: 3rem;
   margin-bottom: 1.5rem;
   line-height: 1.2;
-  color: var(--dark);
+  color: white;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  color: #4a5568;
+  color: #dfdbdbd2;
 }
 
 .search-bar {
@@ -399,5 +413,69 @@ nav a:hover {
 
   .features-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+#IntroTitle {
+  animation: TextAnimation 3s linear;
+}
+/* #loader span::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 1px;
+  background-color: #48bb78;
+  animation: BorderAnimation 3s linear;
+} */
+.main-app {
+  animation: AppOpener 2s ease-in-out forwards;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.light {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  box-shadow: 0 0 30px 8px rgba(255, 255, 255, 0.8);
+
+  animation: LightBeam 7s linear infinite;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes LightBeam {
+  0% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-1000px, 1000px); /* Moves diagonally */
+    opacity: 1;
+  }
+}
+
+@keyframes AppOpener {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes TextAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
   }
 }

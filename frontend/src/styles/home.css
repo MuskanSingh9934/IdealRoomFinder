@@ -1,0 +1,52 @@
+.hero-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: var(--color-woodsmoke-950); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50vw;
+  margin-left: 50px;
+}
+
+.information #title {
+  font-size: clamp(28px, 3.5vw, 54px);
+  font-family: "'Roboto', sans";
+  font-weight: 600;
+  color: var(--color-woodsmoke-100);
+}
+.information p {
+  font-size: clamp(16px, 1.5vw, 28px);
+  font-family: "'Roboto', sans";
+  font-weight: 100;
+  color: var(--color-woodsmoke-200);
+}
+.btn {
+  padding: 10px 15px;
+  width: 200px;
+  border: none;
+  font-size: clamp(14px, 1vw, 18px);
+  font-family: "'Roboto', sans";
+  background-color: var(--color-woodsmoke-400);
+  color: var(--color-woodsmoke-950);
+  margin: 20px 0;
+}
+
+.btn:hover {
+  background-color: var(--color-woodsmoke-300);
+  color: var(--color-woodsmoke-950);
+}
+
+.images {
+  position: relative;
+}
+.images img {
+  aspect-ratio: 1/0.97;
+  height: 100px;
+}
