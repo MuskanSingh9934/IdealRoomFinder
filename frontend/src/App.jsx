@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Navigation } from "./components/Navigation";
 import Footer from "./components/Footer";
-import "./styles/App.css";
+import "./styles/app.css";
 function App() {
   const [load, setLoad] = useState(true);
   setTimeout(() => {

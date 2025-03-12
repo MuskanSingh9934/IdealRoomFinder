@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../styles/register.css";
 
 const Register = () => {
@@ -13,7 +13,6 @@ const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", { email, password, agreeToTerms });
-    // Add your sign-up logic here
   };
 
   return (
