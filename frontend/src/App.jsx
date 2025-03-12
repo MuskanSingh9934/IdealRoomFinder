@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Navigation } from "./components/Navigation";
-import Footer from "./components/footer";
-
+import Footer from "./components/Footer";
 import "./styles/App.css";
 function App() {
   const [load, setLoad] = useState(true);
