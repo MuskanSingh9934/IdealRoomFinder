@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; 
 import { Navigation } from "./components/Navigation";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import "./styles/App.css";
 
 function App() {
