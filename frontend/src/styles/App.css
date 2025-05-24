@@ -202,7 +202,6 @@ nav a:hover {
 
 .section-header h2 {
   font-size: 2.5rem;
-  color: var(--dark);
   margin-bottom: 1rem;
 }
 
@@ -406,6 +405,10 @@ nav a:hover {
   }
 }
 
+.section-title {
+  color: black;
+}
+
 @media (max-width: 768px) {
   nav ul {
     display: none;
@@ -419,17 +422,10 @@ nav a:hover {
 #IntroTitle {
   animation: TextAnimation 3s linear;
 }
-/* #loader span::after {
-  content: "";
-  display: inline-block;
-  width: 0;
-  height: 1px;
-  background-color: #48bb78;
-  animation: BorderAnimation 3s linear;
-} */
+
 .main-app {
   animation: AppOpener 2s ease-in-out forwards;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -473,7 +469,7 @@ nav a:hover {
 @keyframes TextAnimation {
   from {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(-10px);
   }
   to {
     opacity: 1;

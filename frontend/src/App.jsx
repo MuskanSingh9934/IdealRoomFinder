@@ -24,21 +24,11 @@ function App() {
         <span style={{ fontSize: "48px" }} id="IntroTitle">
           Ideal Stay
         </span>
-
-        {/* {Array.from({ length: 1 }).map((_, index) => (
-          <span
-            key={index}
-            className="light"
-            style={{
-              position: "absolute",
-            }}
-          />
-        ))} */}
       </div>
     );
   else
     return (
-      <div className="main-app">
+      <div className="main-app" style={{ overflowX: "hidden" }}>
         <Navigation style={{ position: "absolute" }} />
         <section className="hero">
           <div className="hero-content">
@@ -56,16 +46,10 @@ function App() {
               <button className="search-btn">Search</button>
             </div>
           </div>
-          {/* <div className="hero-image">
-          <img
-            src="https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="Happy roommates in a modern apartment"
-          />
-        </div> */}
         </section>
         <section className="features">
           <div className="section-header">
-            <h2>Why Choose Matez..</h2>
+            <h2 className="section-title">Why Choose Matez..</h2>
             <p>
               We offer a comprehensive platform to make your accommodation
               search simple, quick, and reliable.
@@ -125,7 +109,7 @@ function App() {
         </section>
         <section className="how-it-works">
           <div className="section-header">
-            <h2>How Matez.. Works</h2>
+            <h2 className="section-title">How Matez.. Works</h2>
             <p>
               Finding your perfect room or roommate is just a few simple steps
               away

@@ -1,13 +1,36 @@
 import { useState } from "react";
 
+const baseURL = "http://localhost:8000";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState(null);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Sign in attempt with:", { email, password });
-    // Here you would typically handle authentication logic
+    try {
+      const response = await fetch(`${baseURL}/api/user/login`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email: email, password: password }),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data);
+        localStorage.setItem("token", data.token);
+
+        return (window.location.href = "/dashboard");
+      }
+      throw new Error(await response.json().message);
+    } catch (error) {
+      setError(error.message || "Login failed. Please try again.");
+    } finally {
+      setEmail("");
+      setPassword("");
+    }
   };
 
   const styles = {
@@ -137,11 +160,12 @@ const Login = () => {
             Sign In
           </button>
         </form>
+        <span style={{ color: "red" }}>{error}</span>
 
         <div style={styles.footer}>
           <p style={styles.footerText}>
             Don't have an account?{" "}
-            <a href="#" style={styles.signUpLink}>
+            <a href="/register" style={styles.signUpLink}>
               Sign Up
             </a>
           </p>
