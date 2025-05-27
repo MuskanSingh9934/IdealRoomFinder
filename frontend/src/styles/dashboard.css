@@ -1,0 +1,137 @@
+.dashboard-container {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 24px;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+.dashboard-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Section cards */
+.section-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1d4ed8;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e5e7eb;
+  margin-bottom: 24px;
+}
+
+.section-title.green {
+  color: #059669;
+}
+
+/* Room card */
+.room-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 16px;
+}
+
+.room-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.room-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #111827;
+}
+
+.room-price {
+  font-size: 20px;
+  color: #16a34a;
+  margin-top: 4px;
+  font-weight: bold;
+}
+
+.room-location {
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.room-description {
+  color: #374151;
+  margin-top: 8px;
+}
+
+.contact-button {
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contact-button:hover {
+  background-color: #2563eb;
+}
+
+/* Form elements */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #059669;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #047857;
+}
