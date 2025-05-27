@@ -8,6 +8,9 @@ const JWT_SECRET = process.env.JWT_SECRET || "secret123";
 export const register = async (req, res) => {
   try {
     const { email, password, name, isOwner } = req.body;
+    if (email === "" || password === "" || name === "") {
+      throw new Error("Details are required");
+    }
 
     const existingUser = await User.findOne({ email });
     if (existingUser)
